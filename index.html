@@ -1008,8 +1008,8 @@
        // }),
 	icon: L.divIcon({
     className: 'custom-icon', // This will help you apply CSS styling
-    html: '<div style="background-color: rgba(255, 213, 32, 1.0); width: 26.6px; height: 26.6px; display: flex; justify-content: center; align-items: center; transform: rotate(45deg); border-radius: 0%;">' +
-          '<img src="markers/campingspots_12.svg" style="width: 16px; height: 16px;" />' +
+    html: '<div style="background-color: rgba(255, 213, 32, 1.0); width: 20.6px; height: 20.6px; display: flex; justify-content: center; align-items: center; transform: rotate(45deg); border-radius: 0%;">' +
+          '<img src="markers/campingspots_12.svg" style="width: 20px; height: 20px; transform: rotate(-45deg)" />' +
           '</div>',
     iconSize: [26.6, 26.6]
 		}),
@@ -1140,15 +1140,14 @@
         function style_Birds_14_0() {
             return {
                 pane: 'pane_Birds_14',
-                radius: 10.0,
-                opacity: 1,
-                color: 'rgba(178,223,138,1.0)',
-                dashArray: '',
-                weight: 1,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(178,223,138,1.0)',
-                interactive: false,
+       		rotationAngle: 0.0,
+        	rotationOrigin: 'center center',
+        	icon: L.divIcon({
+            		className: 'custom-icon', // This helps to add custom styles
+            		html: '<div style="background-color: rgba(178, 223, 138, 1.0); width: 26px; height: 26px; display: flex; justify-content: center; align-items: center; border-radius: 50%;">' +
+                  	'<img src="markers/Birds_14.svg" style="width: 19px; height: 19px;" />' +
+                  	'</div>',
+            	iconSize: [26, 26] // Size of the background circle
             }
         }
         function style_Birds_14_1() {
