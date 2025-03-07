@@ -1156,9 +1156,12 @@
                 pane: 'pane_Birds_14',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
-        icon: L.icon({
-            iconUrl: 'markers/Birds_14.svg',
-            iconSize: [19.0, 19.0]
+        icon: L.divIcon({
+            className: 'custom-icon', // This helps to add custom styles
+            html: '<div style="background-color: rgba(178, 223, 138, 1.0); width: 26px; height: 26px; display: flex; justify-content: center; align-items: center; border-radius: 50%;">' +
+                  '<img src="markers/Birds_14.svg" style="width: 19px; height: 19px;" />' +
+                  '</div>',
+            iconSize: [26, 26]
         }),
                 interactive: false,
             }
