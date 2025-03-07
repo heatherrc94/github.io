@@ -1006,6 +1006,13 @@
             iconUrl: 'markers/campingspots_12.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
+	icon: L.divIcon({
+    className: 'custom-icon', // This will help you apply CSS styling
+    html: '<div style="background-color: rgba(255, 213, 32, 1.0); width: 26.6px; height: 26.6px; display: flex; justify-content: center; align-items: center; border-radius: 50%;">' +
+          '<img src="markers/campingspots_12.svg" style="width: 16px; height: 16px;" />' +
+          '</div>',
+    iconSize: [26.6, 26.6]
+		})
                 interactive: false,
             }
         }
