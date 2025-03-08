@@ -992,7 +992,7 @@
             return {
                 pane: 'pane_campingspots_12',
                 shape: 'diamond',
-                radius: 14.0,
+                radius: 24.0,
                 stroke: false,
                 fill: true,
                 fillOpacity: 1,
@@ -1051,7 +1051,10 @@
                         });
                     }
                 },
-                mouseover: highlightFeature,
+                mouseover: function(e) {
+            	layer.openPopup(); // This will open the popup on mouseover
+            	highlightFeature(e); // Assuming this is a function to highlight the feature
+        	},
             });
             var popupContent = '<table>\
                     <tr>\
